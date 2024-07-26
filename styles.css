@@ -15,16 +15,16 @@ form {
   padding: 2em;
   border-radius: 2em;
   background-color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do formulário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 90%;
   max-width: 400px;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 1em;
-  color: #333; /* Cor da fonte dos títulos */
+  color: #333;
   font-weight: 700;
   text-align: center;
 }
@@ -36,7 +36,7 @@ form div {
 label {
   display: block;
   text-align: left;
-  color: #333; /* Cor da fonte dos rótulos */
+  color: #333;
   margin-bottom: 0.5em;
 }
 
@@ -45,20 +45,20 @@ textarea {
   font: 1em sans-serif;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #8a8a8a;
-  background-color: #f7f7f7;
-  border-radius: 8px;
+  border: none;
+  background-color: #DBDBDB;
+  border-radius: 20px;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   padding: 0.5em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra aos campos de texto */
-  transition: all 0.3s ease; /* Transição suave */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #6a82fb; /* Destaque para elementos em foco */
-  box-shadow: 0 0 8px rgba(106, 130, 251, 0.5); /* Sombra ao focar */
+  border-color: #6a82fb;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
@@ -72,30 +72,42 @@ textarea {
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: rgb(85, 42, 255);
   color: white;
   font-weight: bold;
   border: none;
   height: 40px;
-  padding: 0.5em 1.5em; /* Adiciona preenchimento interno aos botões */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra aos botões */
+  padding: 0.5em 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
   background-color: rgb(69, 34, 204);
-  transform: translateY(-2px); /* Efeito ao passar o mouse */
+  transform: translateY(-2px);
 }
 
 button:active {
   background-color: rgb(54, 27, 163);
-  transform: translateY(0); /* Efeito ao clicar */
+  transform: translateY(0);
 }
 
 input::placeholder,
 textarea::placeholder {
   color: #888;
   font-style: italic;
+}
+
+.iti {
+  width: 100%;
+}
+
+.iti__flag-container {
+  margin-right: 8px;
+}
+
+input#telefone {
+  padding-left: 58px;
 }
