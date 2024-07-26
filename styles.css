@@ -1,22 +1,9 @@
-p {
-    font-family: "helvetica neue", helvetica, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 200, 0.6);
-    background: rgba(0, 0, 200, 0.3);
-    color: rgba(0, 0, 200, 0.6);
-    box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
-    border-radius: 10px;
-    padding: 3px 10px;
-    display: inline-block;
-    cursor: pointer;
-  }
+
   body {
     /* Centraliza o formulário na página */
     text-align: center;
-    background-color: rgb(231, 200, 231);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(92, 144, 255);
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial;
     vertical-align: baseline;
   }
   
@@ -28,6 +15,13 @@ p {
     border-radius: 2em;
     background-color: #ffffff;
     font: inherit;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao formulário */
+
+  }
+  .h4{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #ff0000; /* Cor da fonte dos títulos */
   }
   
   ul {
@@ -37,7 +31,7 @@ p {
   }
   
   form li + li {
-    margin-top: 5em;
+    margin-top: 2em;
     
   }
   
@@ -46,6 +40,8 @@ p {
     display: flex;
     min-width: 100px;
     text-align: right;
+    color: #333; /* Cor da fonte dos rótulos */
+   
    
   }
   
@@ -55,6 +51,7 @@ p {
        Por padrão, as áreas de texto possuem uma fonte monoespaçada */
     font: 1em sans-serif;
     /* Tamanho uniforme do campo de texto */
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial;
     width: 300px;
     box-sizing: border-box;
     /* Corresponde às bordas dos campos do formulário */
@@ -62,6 +59,9 @@ p {
     background-color: #DBDBDB;
     border-radius: 8px;
     font: inherit;
+    margin-bottom: 1em; /* Adiciona espaço abaixo de cada campo de texto */
+    padding: 0.5em; /* Adiciona preenchimento interno nos campos de texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos campos de texto */
   }
   
   input:focus,
@@ -89,12 +89,15 @@ p {
     /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
        entre os rótulos e seus campos de texto */
     border-radius: 10px;
-    background-color: purple;
+    background-color: rgb(85, 42, 255);
     color: white;
     font-weight: bold;
     margin: 0%;
     border: none;
     height: 30px;
     align-self: center;
-  }
+    padding: 0.5em 1em; /* Adiciona preenchimento interno aos botões */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos botões */
+}
+  
   
