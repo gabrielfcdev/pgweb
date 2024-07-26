@@ -8,34 +8,29 @@
 </head>
 <body>
   <div>
-
     <form action="/pagina-processa-dados-do-form" method="post">
+        <h4>Preencha somente se você organiza eventos e precisa de ajuda de um consultor!</h4>
         <div>
-          <h4>Preencha somente se você organiza eventos e precisa de ajuda de um consultor!</h4>
           <label for="nome">Nome:</label>
-          <input type="text" id="nome" />
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
         </div>
         <div>
           <label for="email">E-mail:</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+        </div>
+        <div>
+          <label for="fone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" />
         </div>
         <div>
           <label for="msg">Mensagem:</label>
-          <textarea id="msg"></textarea>
+          <textarea id="msg" name="mensagem" placeholder="Digite sua mensagem"></textarea>
         </div>
         <div class="button">
             <button type="submit">Confirmar inscrição</button>
         </div>
-
-
-          
       </form>
-
     </div>
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
