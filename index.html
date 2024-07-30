@@ -8,24 +8,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 </head>
 <body>
+  <h1>Seja bem vindo! ao maior evento de Carros do Brasil</h1>
+  <div class="video-overlay"></div>
+  <video autoplay muted loop class="video-background">
+    <source src="video.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+</video>
   <div>
+    
     <form action="/pagina-processa-dados-do-form" method="post">
         <h4>Preencha somente se você organiza eventos e precisa de ajuda de um consultor!</h4>
         <div>
           <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+          <input type="text" id="nome" name="nome"/>
         </div>
         <div>
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+          <input type="email" id="email" name="email"/>
         </div>
         <div>
-          <label for="fone">Telefone</label>
-          <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" />
+          <label for="fone">Celular*</label>
+          <input type="tel" id="telefone" name="telefone"/>
+        </div>
+        <div>
+          <label for="evento">Nome da Organização/Evento*</label>
+          <input type="text" id="nomeevento" name="nomeevento"/>
+        </div>
+        <div>
+          <label for="seletorinscricao">Quando você pretende abrir as inscrições do seu próximo evento ou curso?*</label>
+          <select name="inscricao" id="inscricao">
+            <option value="Selecione">Selecione</option>
+            <option value="Não tenho essa definição">Não tenho essa definição</option>
+            <option value="Imediatamente">Imediatamente</option>
+            <option value="Em um mês">Em um mês</option>
+            <option value="Entre 2 e 3 meses">Entre 2 e 3 meses</option>
+            <option value="Daqui 4 ou 5 meses">Daqui 4 ou 5 meses</option>
+            <option value="Mais de 5 meses">Mais de 5 meses</option>
+          </select>
+        </div>
+        <div>
+          <input type="radio" id="sim" name="organizadorevento" value="Sim, sou organizador(a) de eventos!">
+          <input type="radio" id="nao" name="organizadorevento" value="Não, não sou organizador(a) de eventos!">
+
         </div>
         <div>
           <label for="msg">Mensagem</label>
-          <textarea id="msg" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+          <textarea id="msg" name="mensagem"></textarea>
         </div>
         <div class="button">
             <button type="submit">Confirmar inscrição</button>
