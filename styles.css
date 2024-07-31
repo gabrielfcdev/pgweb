@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background: linear-gradient(135deg, #92a1ff, #d4e2ff);
+  background: linear-gradient(100deg, #350170, #4D1991);
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -8,13 +8,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-weight: bold
 }
-h1 {
-  font-size: 3em;
-  color: #fff;
-  margin-bottom: 20em;
-  font-family: 'Roboto', 'Helvetica Neue';
-}
+
 select{
   padding : 10px;
   font-size: 16px;
@@ -38,48 +34,7 @@ option{
   padding: 10px;
   margin: 2px;
   border: 1px solid #ccc;
-
 }
-radio-group {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.radio-option {
-  margin-bottom: 1em;
-  display: flex;
-  align-items: center;
-}
-
-input[type="radio"] {
-  margin-right: 10px;
-}
-
-label {
-  font-size: 1em;
-  color: #333;
-}
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-.video-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
-  z-index: -1;
-}
-
-
 form {
   display: inline-block;
   padding: 2em;
@@ -91,7 +46,6 @@ form {
   max-width: 400px;
   
 }
-
 h4 {
   font-size: 1.2em;
   margin-bottom: 1em;
@@ -128,22 +82,20 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border-color: #6a82fb;
+  border-color: #2ced00;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   outline: none;
 }
-
-textarea {
-  vertical-align: top;
-  height: 5em;
-}
-
+/*botao confirmar inscrição*/
 .button {
   text-align: center;
 }
 
+
+/*botao confirmar inscrição*/
 button {
   border-radius: 20px;
+  text-align: center;
   background-color: rgb(85, 42, 255);
   color: white;
   font-weight: bold;
@@ -155,7 +107,7 @@ button {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
+button:hover {  /*botao confirmar inscrição*/
   background-color: rgb(69, 34, 204);
   transform: translateY(-2px);
 }
@@ -172,7 +124,7 @@ textarea::placeholder {
 }
 
 .iti {
-  width: 100%;
+  width: 100%; /*campo telefone*/
 }
 
 .iti__flag-container {
@@ -182,22 +134,65 @@ textarea::placeholder {
 input#telefone {
   padding-left: 58px;
 }
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font: 1em Roboto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 2em;
-  padding-top: 20%;
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
 }
