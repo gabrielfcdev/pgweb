@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 </head>
 <body>
+  <header class="header">
   <div>
     <form action="/pagina-processa-dados-do-form" method="post">
         <h4>Preencha somente se você organiza eventos e precisa de ajuda de um consultor!</h4>
         <div>
           <label for="nome">Nome*</label>
-          <input type="text" id="nome" name="nome"/>
+          <input type="text" style="color: #4F4F4F;" id="nome" name="nome"/>
         </div>
         <div>
           <label for="email">E-mail*</label>
@@ -62,6 +63,37 @@
       </form>
       
     </div>
+  </header>
+  <section class="clients">
+    <h2>Alguns Clientes:</h2>
+    <div class="logos">
+        <!-- Adicione as logos dos clientes aqui -->
+         <img src="logosteste/logo1.png" alt="logo 1">
+         <img src="logosteste/logo2.png" alt="logo 2">
+         <img src="logosteste/logo3.png" alt="logo 3">
+         <img src="logosteste/logo4.png" alt="logo 4">
+         <img src="logosteste/logo5.png" alt="logo 5">
+         <img src="logosteste/logo6.png" alt="logo 6">
+         <img src="logosteste/logo7.png" alt="logo 7">
+         <img src="logosteste/logo8.png" alt="logo 8">
+    </div>
+  </section>
+  <section class="steps">
+    <h2>Em poucos minutos você já pode divulgar e organizar seu evento de maneira eficiente</h2>
+    <div class="step">
+        <h3>Crie sua conta</h3>
+        <p>Comece agora mesmo. Você será acompanhado por um consultor.</p>
+    </div>
+    <div class="step">
+        <h3>Personalize</h3>
+        <p>Preparamos e organizamos a operação do sistema de ingressos para o seu evento.</p>
+    </div>
+    <div class="step">
+        <h3>Divulgue e comemore</h3>
+        <p>Assine e acompanhe as vendas e divulgue seu evento de maneira prática.</p>
+    </div>
+  </section>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="script.js"></script>
 </body>
