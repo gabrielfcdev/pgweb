@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   background: white;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -8,12 +8,11 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  /*height: 100vh;*/
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+}*/
 
 .navbar {
   display: flex;
@@ -35,7 +34,7 @@ body {
 .header {
   background-color: #5a2d82;
   color: white;
-  padding: 100px;
+  padding: 90px;
   text-align: left;
   width: 100%;
   align-items: center;
@@ -78,65 +77,10 @@ body {
   box-shadow: 0px 0px 10px rgba(0,  0,  0,  0.1);
 }
 
-.clientes {
-  background-color: #5a2d82;
-  color: rgb(255, 104, 104);
-  text-align: center;
-  padding: 40px 20px;
-  width: 100%;
-}
 
-.logos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
-.logos img {
-  margin: 10px;
-  max-height: 60px;
-  width: auto;
-  flex: 1 0 21%;
-}
 
-.steps {
-  text-align: center;
-  padding: 40px 20px;
-  width: 100%;
-}
-
-.step {
-  margin: 20px 0;
-}
-
-.step h3 {
-  color: #5a2d82;
-}
-
-select {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 20px;
-  font: 1em Roboto;
-  width: 100%;
-  box-sizing: border-box;
-  border: none;
-  background-color: #DBDBDB;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-  padding: 0.5em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-option {
-  font-size: 14px;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  margin: 2px;
-  border: 1px solid #ccc;
-}
-
+/*formulario*/
 form {
   display: inline-block;
   padding: 2em;
@@ -168,6 +112,7 @@ label {
   margin-bottom: 0.5em;
 }
 
+/*texto formulario */
 input,
 textarea {
   font: 1em sans-serif;
@@ -182,18 +127,115 @@ textarea {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
-
 input:focus,
 textarea:focus {
-  border-color: #2ced00;
+  border-color: #0400ff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
+
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+.iti {
+  width: 100%;
+}
+.iti__flag-container {
+  margin-right: 8px;
+}
+input#telefone {
+  padding-left: 58px;
+}
+
+/*seletor formulario*/
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  font: 1em Roboto;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #DBDBDB;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+option {
+  font-size: 14px;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid #ccc;
+}
+
+/*checkbox formulario*/
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font: 1em Roboto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*seletor formulario*/
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/*seletor formulario*/
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #DBDBDB;
+  border-radius: 50%;
+}
+/*seletor formulario*/
+.container:hover input ~ .checkmark {
+  background-color: #DBDBDB;
+}
+/*seletor formulario*/
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+/*seletor formulario*/
+.checkmark:after {
+  content: "";
+  position: fixed;
+  display: none;
+}
+/*seletor formulario*/
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/*seletor formulario*/
+.container .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*botao formulario*/
 .button {
   text-align: center;
 }
-
 button {
   border-radius: 20px;
   text-align: center;
@@ -207,89 +249,84 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 button:hover {
   background-color: rgb(69, 34, 204);
   transform: translateY(-2px);
 }
-
 button:active {
   background-color: rgb(54, 27, 163);
   transform: translateY(0);
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: #888;
-  font-style: italic;
+
+/*logos section*/
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #128C7E;
 }
 
-.iti {
+.logos img {
+  margin: 20px;
+  max-height: 70px;
+  width: auto;
+  align-items: first baseline;
+  flex-direction: column; ;
+}
+
+.clientes {
+  text-align: center;
+  padding: 40px 20px;
   width: 100%;
 }
 
-.iti__flag-container {
-  margin-right: 8px;
+
+.steps {
+  text-align: center;
+  padding: 90px;
+  width: 100%;
+  background-color: rgb(255, 105, 105);
 }
 
-input#telefone {
-  padding-left: 58px;
+.step {
+  margin: 20px 0;
 }
 
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font: 1em Roboto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.step h3 {
+  color: #5a2d82;
 }
 
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+
+.penultima{
+  padding: 90px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #54aafa;
+  width: 100%;
 }
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: #DBDBDB;
-  border-radius: 50%;
+.final{
+  padding: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #25D366;
+  width: 100%;
+}
+.cursoimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 5px;
+  margin: 20px;
 }
 
-.container:hover input ~ .checkmark {
-  background-color: #DBDBDB;
-}
-
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-.checkmark:after {
-  content: "";
-  position: fixed;
-  display: none;
-}
-
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.container .checkmark:after {
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+footer {
+	background-color: #e4ff6e;
+	padding: 10px;
+	text-align: center;
+	margin-top: 10px;
 }
 
 .whatsapp-button {
@@ -317,21 +354,4 @@ input#telefone {
   width: 100%;
   height: 100%;
   padding: 0px;
-}
-
-/*revisar ou apagar*/
-footer {
-	background-color: #ffffff;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-	margin-top: 50px;
-}
-
-.final{
-  padding: 3% 12%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
 }
