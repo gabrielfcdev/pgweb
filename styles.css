@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background: linear-gradient(100deg, #350170, #4D1991);
+  background: white;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -12,46 +12,40 @@ body {
   font-weight: bold;
 }
 
-.navbar{
+.navbar {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-    background-color: #fff;
-  
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #fff;
 }
+
 .navbar-logo {
   flex: 1;
   text-align: center;
-
 }
 
 .navbar-logo img {
   height: 30px; /* Ajuste conforme necessário */
 }
 
-
-.header{
-  background-color:#5a2d82 ;
+.header {
+  background-color: #5a2d82;
   color: white;
   padding: 100px;
-  text-align: unset;
+  text-align: left;
   width: 100%;
 }
+
 .header-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.logo {
-  max-height: 30px;
-  margin-right: 20px;
-  
-}
-
 .header-text {
   text-align: left;
+  max-width: 600px; /* Define uma largura máxima para melhor alinhamento */
 }
 
 .header-text h1 {
@@ -66,10 +60,10 @@ body {
 
 .header-text ul li {
   margin-bottom: 10px;
+  font-size: 18px; /* Ajusta o tamanho da fonte */
 }
 
-
-.form{
+.form {
   background-color: white;
   color: black;
   padding: 20px;
@@ -77,45 +71,45 @@ body {
   width: 300px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0,  0,  0,  0.1);
-
 }
 
-.clientes{
+.clientes {
   background-color: #5a2d82;
-  color: white;
+  color: rgb(255, 104, 104);
   text-align: center;
   padding: 40px 20px;
   width: 100%;
-
 }
 
-.logos{
+.logos {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
 }
-.logos img{
+
+.logos img {
   margin: 10px;
   max-height: 60px;
   width: auto;
   flex: 1 0 21%;
 }
+
 .steps {
   text-align: center;
   padding: 40px 20px;
   width: 100%;
 }
-.step{
-  margin: 20px 0;
 
+.step {
+  margin: 20px 0;
 }
 
 .step h3 {
-  color:#5a2d82;
+  color: #5a2d82;
 }
 
-select{
-  padding : 10px;
+select {
+  padding: 10px;
   font-size: 16px;
   border-radius: 20px;
   font: 1em Roboto;
@@ -123,21 +117,21 @@ select{
   box-sizing: border-box;
   border: none;
   background-color: #DBDBDB;
-  border-radius: 20px;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
   padding: 0.5em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-
 }
-option{
+
+option {
   font-size: 14px;
-  font-family: "Roboto", "Helvetica Neue",;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
   margin: 2px;
   border: 1px solid #ccc;
 }
+
 form {
   display: inline-block;
   padding: 2em;
@@ -147,8 +141,8 @@ form {
   text-align: left;
   width: 90%;
   max-width: 400px;
-  
 }
+
 h4 {
   font-size: 1.2em;
   margin-bottom: 1em;
@@ -189,13 +183,11 @@ textarea:focus {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   outline: none;
 }
-/*botao confirmar inscrição*/
+
 .button {
   text-align: center;
 }
 
-
-/*botao confirmar inscrição*/
 button {
   border-radius: 20px;
   text-align: center;
@@ -210,7 +202,7 @@ button {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {  /*botao confirmar inscrição*/
+button:hover {
   background-color: rgb(69, 34, 204);
   transform: translateY(-2px);
 }
@@ -227,7 +219,7 @@ textarea::placeholder {
 }
 
 .iti {
-  width: 100%; /*campo telefone*/
+  width: 100%;
 }
 
 .iti__flag-container {
@@ -237,6 +229,7 @@ textarea::placeholder {
 input#telefone {
   padding-left: 58px;
 }
+
 .container {
   display: block;
   position: relative;
@@ -250,14 +243,12 @@ input#telefone {
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-/* Create a custom radio button */
 .checkmark {
   position: absolute;
   top: 0;
@@ -268,36 +259,31 @@ input#telefone {
   border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #DBDBDB;
 }
 
-/* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: fixed;
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
 .whatsapp-button {
@@ -325,4 +311,11 @@ input#telefone {
   width: 100%;
   height: 100%;
   padding: 0px;
+}
+footer {
+	background-color: #ffffff;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
 }
