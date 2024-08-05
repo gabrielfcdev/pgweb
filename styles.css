@@ -10,6 +10,9 @@ body {
   align-items: center;
   /*height: 100vh;*/
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -35,6 +38,8 @@ body {
   padding: 100px;
   text-align: left;
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-content {
@@ -141,6 +146,7 @@ form {
   text-align: left;
   width: 90%;
   max-width: 400px;
+  justify-content: space-between;
 }
 
 h4 {
@@ -312,10 +318,20 @@ input#telefone {
   height: 100%;
   padding: 0px;
 }
+
+/*revisar ou apagar*/
 footer {
 	background-color: #ffffff;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
 	margin-top: 50px;
+}
+
+.final{
+  padding: 3% 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
