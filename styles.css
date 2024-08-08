@@ -12,6 +12,7 @@ body{
 .navbar-logo {
   flex: 1;
   text-align: center;
+  padding-top: 10px;
 }
 .navbar-logo img {
   height: 30px; /* Ajuste conforme necessário */
@@ -241,12 +242,21 @@ button:active {
   transform: translateY(0);
 }
 
+.clients{
+  align-items: center;
+  text-align: center;
+  background-color: #7977ff;
+}
+.clients h2{
+  font-size: 35px;
+
+}
 /*logos section*/
 .logos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #128C7E;
+  background-color: #7d918e;
 }
 
 .logos img {
