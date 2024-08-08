@@ -33,14 +33,22 @@
 .header-text h1 {
   font-size: 35px;
   margin-bottom: 10px;
+  line-height: 1.0; 
 }
 .texto {
-  color: white; /* Define a cor do texto como branco */
+  color: white;           /* Cor do texto */
+  font-size: 18px;        /* Tamanho da fonte */
+  line-height: 1.5;       /* Espaçamento entre linhas (1.5 vezes o tamanho da fonte) */
 }
 
-/* Define o estilo específico para o símbolo "+" */
 .texto span.plus {
-  color: red; /* Define a cor do símbolo "+" como vermelho */
+  color: red;             /* Cor do símbolo "+" */
+  font-weight: normal;    /* Peso da fonte para o "+" */
+}
+
+.texto span.plus strong {
+  font-weight: bold;      /* Peso da fonte para o primeiro "+" */
+  font-size: 20px;        /* Tamanho da fonte do primeiro "+" */
 }
 
 
