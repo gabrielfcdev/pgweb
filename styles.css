@@ -1,4 +1,8 @@
 /*navbar (cabeçalho) */
+
+body{
+  margin: 0;
+}
 .navbar {
   display: contents;
   justify-content: space-between;
@@ -19,6 +23,8 @@
   padding: 50px;
   display: flex;
   justify-content: center;
+
+
 }
 
 .header-content {
@@ -206,15 +212,21 @@ option {
 /*botao formulario*/
 .button {
   text-align: center;
+  padding-top: 25px;
+  
 }
 button {
-  border-radius: 20px;
+  border-radius: 27px;
   text-align: center;
   background-color: rgb(85, 42, 255);
   color: white;
   font-weight: bold;
   border: none;
-  height: 40px;
+  height: 55px;
+  width: 300px;
+  font-size: large;
+
+
   padding: 0.5em 1.5em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
