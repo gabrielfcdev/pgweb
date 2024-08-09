@@ -438,21 +438,26 @@ button:active {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .final-button button:hover {
-  background-color: rgb(69, 34, 204);
+  background-color: rgb(255, 0, 0);
   transform: translateY(-2px);
 }
 .final-button button:active {
-  background-color: rgb(54, 27, 163);
+  background-color: rgb(255, 0, 0);
   transform: translateY(0);
 }
 
 .custom-button:hover {
-  background-color: #0056b3; /* Cor de fundo quando o botão é sobreposto pelo cursor */
+  background-color: #df0000; /* Cor de fundo quando o botão é sobreposto pelo cursor */
 }
 
+.footer{
+  min-height: 300px;
+
+}
 .footer-nav{
-  display: contents ;
-  background-color: #fff;
+  padding: 20px;
+  background-color: #ffffff;
+
 }
 .footer-img {
   text-align: right;
