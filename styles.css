@@ -393,17 +393,61 @@ button:active {
   margin-top: 10px;
 }
 
-/*final*/
-.final{
-  padding: 90px;
+.final {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #25D366;
+  align-items: center; /* Alinha verticalmente no centro */
+  justify-content: center; /* Alinha horizontalmente no centro */
+  text-align: center; /* Centraliza o texto no eixo horizontal */
+  padding: 90px; /* Adicione um pouco de espaçamento interno, se necessário */
 }
-.final-img {
+.final h1{
+  font-size: 37px;
+  font-weight: bold;
+  margin-top: 60px;
+  line-height: 1.0; 
+
 }
+
+.final-content {
+  display: flex;
+  flex-direction: column; /* Alinha o texto e o botão em uma coluna */
+  align-items: center; /* Centraliza o texto e o botão horizontalmente */
+  margin-right: 150px; /* Espaçamento entre o texto e a imagem */
+}
+
 .final-img img {
+  max-width: 200%; /* Ajusta a imagem para não exceder o tamanho do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.final-button {
+  border-radius: 35px;
+  text-align: center;
+  background-color: #EE3825;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 65px;
+  width: 350px;
+  font-size: 20px;
+ 
+
+  padding: 0.5em 1.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.final-button button:hover {
+  background-color: rgb(69, 34, 204);
+  transform: translateY(-2px);
+}
+.final-button button:active {
+  background-color: rgb(54, 27, 163);
+  transform: translateY(0);
+}
+
+.custom-button:hover {
+  background-color: #0056b3; /* Cor de fundo quando o botão é sobreposto pelo cursor */
 }
 
 .footer-nav{
@@ -411,9 +455,8 @@ button:active {
   background-color: #fff;
 }
 .footer-img {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  text-align: right;
+  padding-right: 300px;
 }
 
 .footer-img img {
