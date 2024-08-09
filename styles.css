@@ -242,29 +242,49 @@ button:active {
   transform: translateY(0);
 }
 
-.clients{
-  align-items: center;
+.clients {
+  position: relative; /* Necessário para a pseudo-classe ::before */
+  background-image: url('logosteste/img_clientes.jpg');
+  background-size: cover;/* Ajusta a imagem para cobrir toda a área */
+  background-position: center;/* Centraliza a imagem */
+  background-repeat: no-repeat;/* Evita que a imagem se repita */
+  padding: 20px;/* Espaçamento interno da seção */
+  color: #fff;/* Cor do texto */
+  z-index: 1; /* Garante que o conteúdo apareça acima da sobreposição */
   text-align: center;
-  background-color: #7977ff;
+  padding: 80px;
+  
 }
-.clients h2{
-  font-size: 35px;
 
+.clients::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(92, 18, 177, 0.575); /* Cor preta com 50% de opacidade */
+  z-index: -1; /* Coloca a sobreposição atrás do conteúdo */
+}
+
+
+.clients h2{
+  font-size: 37px;
+  margin-top: -40px; 
 }
 /*logos section*/
 .logos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #7d918e;
 }
 
 .logos img {
-  margin: 20px;
-  max-height: 70px;
+  margin: 40px;
+  max-height: 100px;
   width: auto;
   align-items: first baseline;
-  flex-direction: column; ;
+  flex-direction: column;
 }
 
 .steps {
